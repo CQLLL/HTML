@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> Alan</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myData={
+                name:"Alan",
+                weather:"sunny"
+            };
+            myData.dayOfweek = "Monday";
+            myData.sayHello = function(){
+                document.writeln("Hello");
+            };
+            // myData.sayHello();
+            // delete myData.name;
+            // delete myData.weather;
+            // delete myData.sayHello;
+            var hasName = "name" in myData;
+            var hasDate = "date" in myData;
+            document.writeln("HasName: "+hasName);
+            document.writeln("HasName: "+hasDate);
+        
+        </script>
+    </body>
+</html>

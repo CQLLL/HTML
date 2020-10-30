@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alan</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var myData={
+                name:"Alan",
+            };
+            // document.writeln("Prop: "+myData.doesntexist);
+            document.writeln("Var: "+myData.weather);
+            document.writeln("Prop: "+("weather" in myData));
+
+            myData.weather = "sunny";
+            document.writeln("Var: "+myData.weather);
+            document.writeln("Prop: "+("weather" in myData));
+            myData.weather = null;
+            document.writeln("Var: "+myData.weather);
+            document.writeln("Prop: "+("weather" in myData));
+        </script>
+    </body>
+</html>
